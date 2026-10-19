@@ -1,0 +1,218 @@
+.shippori-antique-b1-regular {
+    font-family: "Shippori Antique B1", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#008080;
+	text-shadow:#99CCCC 0.1em 0.1em 0.1em;
+	font-size:45px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: none;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("image/ptcgbg.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -3;
+}
+
+.main-header .container {
+    max-width: 100%;
+    margin: auto;
+	height:20%;
+}
+
+.main-header .logo {
+    width: 100px;
+}
+
+nav {
+    background-color:#00C0C0;
+    width: 100%;
+    margin: 0; 
+    padding: 0;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 10; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+nav > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+    text-align: center;
+    color: Snow;
+}
+
+nav a {
+    color: inherit;
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 20px; 
+    margin: 0; 
+}
+
+nav a:hover {
+    text-shadow: 0 0 0.2em #F0F8FF, 0 0 0.2em #F0F8FF;
+    color: #008000;
+}
+.flex-nav > li {
+    display: inline-block;
+    margin-right: auto;	
+}
+
+p{
+	
+	font-size:20px;
+	line-height: 35px;
+	margin-left:180px;
+	text-shadow:#C0C0C0 0.1em 0.1em 0.1em;
+	margin-right:180px;
+}
+
+.card {
+  background:#F0FFFF; 
+  opacity:0.9 !important;
+  border-radius:3px;
+  border: 2px solid #99CCCC;
+  padding:10px;
+  margin:auto;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  margin-bottom:20px;
+}
+
+.card .card-header {
+  border-bottom:none;
+  background-color:transparent;
+}
+
+.card .title {
+  color:#006666;
+  text-shadow:0 5px 10px #80C0C0;
+}
+
+.card .text {
+  color:#444444;
+  margin:auto;
+  line-height: 40px;
+}
+
+.card-footer {
+  border-top:none !important;
+  background-color:transparent !important;
+}
+
+.carousel-container {
+  overflow: hidden;
+  width: 500px;
+  height: 300px;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+  flex-shrink: 0;
+  width: 500px;
+  height: 300px;
+  z-index:5;
+}
+
+.button {
+  width:200px;
+  height:2.5em;
+  color:#FFFFFF;
+  background-color:#009999;
+  text-decoration: none;
+  padding: 5px 5px;
+  margin:10px 0;
+  text-align:center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px; 
+  font-weight:bold;
+  border: 2px solid Turquoise;
+}
+
+.card1 {
+  width: 400px;
+  height: 558px;
+  margin: auto;
+  border: 1px solid #FFF;
+  position: relative;
+  perspective: 150rem;
+  border-radius: 2px;
+  margin-bottom: 10px; 
+}
+
+.font, .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  font-size: 3rem;
+  color: #fff;
+  box-sizing: border-box;
+  transition: all 0.5s;
+  backface-visibility: hidden;
+}
+
+.font {
+  background-image: url("image/ptcgpb.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.back {
+  background-image: url("image/ptcgp1.jpg");
+  background-size: cover;
+  background-position: center;
+  transform: rotateY(-180deg);
+}
+
+.card1:hover .font {
+  transform: rotateY(180deg);
+}
+
+.card1:hover .back {
+  transform: rotateY(0);
+}
+
+.card-description {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #000;
+}
+.pot>li{
+	
+	font-size:20px;
+	line-height: 35px;
+	margin-left:200px;
+	text-shadow:#C0C0C0 0.1em 0.1em 0.1em;
+	margin-right:200px;
+}
+
+iframe {
+            border: 5px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 20px 10px rgba(0, 0, 0, 0.2);
+            max-width: 100%;
+        }

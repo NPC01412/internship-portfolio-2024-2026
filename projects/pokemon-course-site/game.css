@@ -1,0 +1,270 @@
+.shippori-antique-b1-regular {
+    font-family: "Shippori Antique B1", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#FFF;
+	font-size:45px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.main-header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background: #FFB266;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.flex-nav > li {
+  display: inline-block;
+}
+
+.background-section {
+  height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+}
+
+.first-section {
+  position: relative; 
+  background-image: url("image/pika.gif");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  height: 100vh;
+  overflow: hidden; 
+}
+
+
+.second-section {
+  background-color:#FFE0C0;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 1; 
+
+}
+
+.third-section {
+  background-image: url("image/obbg.jpg");
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 1; 
+
+}
+
+.fourth-section {
+  background-color:#FFFFE5	;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 1; 
+
+}
+
+.fifth-section {
+  background-color:#400000;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 1; 
+
+}
+
+
+
+.content5 {
+  z-index: 2; 
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+
+
+.main-header .container {
+    max-width: 100%;
+    margin: auto;
+	height:20%;
+}
+
+.main-header .logo {
+    width: 100px;
+}
+
+nav {
+    background-color:#FFB266;
+    width: 100%;
+    margin: 0; 
+    padding: 0;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 10; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+nav > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+    text-align: center;
+    color: Snow;
+}
+
+nav a {
+    color: inherit;
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 20px; 
+    margin: 0; 
+}
+
+nav a:hover {
+    text-shadow: 0 0 0.2em #F0F8FF, 0 0 0.2em #F0F8FF;
+    color:#CC6600;
+}
+.flex-nav > li {
+    display: inline-block;
+    margin-right: auto;	
+}
+
+p{
+	
+	font-size:20px;
+	line-height: 35px;
+	margin-left:180px;
+	text-shadow:#C0C0C0 0.1em 0.1em 0.1em;
+	margin-right:180px;
+}
+
+
+.card {
+  opacity:0.95;
+  background: #F0FFFF;
+  border-radius: 3px;
+  border: 1px solid #FFF;
+  padding: 20px;
+  box-shadow: 0 10px 10px #FFB266;
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+  width: 95vw; 
+  max-width: 100%; 
+  text-align: center; 
+  margin-top:300px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center; 
+}
+
+.card .title {
+  color: #C06000;
+  text-shadow: 0 5px 10px #FFC080;
+  margin-bottom: 20px; /
+}
+
+.card .text {
+  color: #444444;
+  margin: 0; 
+  line-height: 40px;
+}
+
+.card-footer {
+  border-top: none !important;
+  background-color: transparent !important;
+}
+
+
+.card-container3 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  padding: 20px;
+}
+
+.card-item3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: AntiqueWhite ;
+  border: 2px solid #CC6600	;
+  border-radius: 8px;
+  box-shadow: 0 10px 10px #CC6600;
+  padding: 15px;
+  
+}
+
+.card-content3 {
+  flex: 1;
+}
+
+.card-content3 .date {
+  color: #CC6600;
+  font-size: 18px;
+  margin-bottom:10px;
+  font-weight: bold;
+  text-shadow: 0 5px 10px #FFF;
+}
+
+.card-content3 .description {
+  font-size:18px;
+	line-height: 35px;
+	margin-left:100px;
+	text-shadow:#C0C0C0 0.1em 0.1em 0.1em;}
+
+.card-image3 {
+  flex-shrink: 0;
+  z-index: 8; 
+}
+
+.card-image3 img {
+  max-width: 150px; 
+  height: auto;
+  border-radius: 8px; 
+  max-height: 200px;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 10px;
+}
+
+.image-container img {
+  max-width: 260px; 
+  margin-right: 60px; 
+  margin-top: 30px;
+  object-fit: cover; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.image-container img:hover {
+  transform: scale(1.1); 
+  cursor: pointer; 
+}
+

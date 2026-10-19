@@ -1,0 +1,197 @@
+.shippori-antique-b1-regular {
+    font-family: "Shippori Antique B1", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#994C00;
+	text-shadow: Goldenrod 0.1em 0.1em 0.1em;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: none;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("image/background2.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -3;
+}
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left:10%;
+    width: 80%;
+    height: 100%;
+    background-image: url("image/whitebg.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -2;
+}
+
+.main-header .container {
+    max-width: 100%;
+    margin: auto;
+	height:20%;
+}
+
+.main-header .logo {
+    width: 100px;
+}
+
+nav {
+    background-color: #DAA520;
+    width: 100%;
+    margin: 0; 
+    padding: 0;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 100; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+nav > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+    text-align: center;
+    color: Snow;
+}
+
+nav a {
+    color: inherit;
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 20px; 
+    margin: 0; 
+}
+
+nav a:hover {
+    text-shadow: 0 0 0.2em #F0F8FF, 0 0 0.2em #F0F8FF;
+    color: #663300;
+}
+.flex-nav > li {
+    display: inline-block;
+    margin-right: auto;
+	
+}
+
+p{
+	font-size:20px;
+	margin-right:90px;
+	line-height: 35px;
+	margin-left:80px;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.responsive-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.zones {
+    position: relative;
+    text-align: center;
+    max-width: 100%;
+    width: 325px; 
+}
+
+.zones img {
+    width: 325px;
+    height: 245px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.imtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0;
+    color: Snow;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: opacity 0.3s ease;
+    text-shadow: Black 0.1em 0.1em 0.1em;
+}
+
+.zones:hover img {
+    opacity: 0.5;
+}
+
+.zones:hover .imtext {
+    opacity: 1;
+}
+
+
+@media (max-width: 820px) {
+	nav a {
+        font-size: 1.2rem;
+        padding: 10px 15px;
+    }
+    table {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+
+    td {
+        flex: 0 0 50%; 
+        box-sizing: border-box; 
+        padding: 10px; 
+        text-align: center;
+    }
+
+    img {
+        width: 100%; 
+        height: auto;
+    }
+
+    .imtext h5 {
+        font-size: 1rem; 
+    }
+	body::after {
+    left:7.5%;
+    width: 85%;}
+
+}
+
+
+@media (max-width: 380px) {
+    .zones {
+        flex: 0 0 50%; 
+    }
+
+    .imtext h5 {
+        font-size: 0.9rem; 
+		flex: 0 0 50%;
+    }
+}
+
+
+

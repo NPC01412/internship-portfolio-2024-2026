@@ -1,0 +1,189 @@
+<html>
+ <head>
+    <meta charset="utf-8" />
+    <title>架構分析</title>
+    <link rel="stylesheet" type="text/css" href="information.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    </head>
+ <body>
+  <header class="main-header">
+        <div class="container">
+            <nav>
+                <ul class="flex-nav">
+                    <li><a href="index.html"><img src="image/logo.png" alt="logo" title="logo" style="width:100%;" class="logo"></a></li>
+                    <li><a href="world.html"><b>世界觀</b></a></li>
+                    <li><a href="what.html"><b>寶可夢是什麼?</b></a></li>
+                    <li><a href="game.html"><b>電子遊戲</b></a></li>
+                    <li><a href="ptcg.html"><b>PTCG</b></a></li>
+                    <li><a href="center.html"><b>寶可夢中心</b></a></li>
+                    <li><a href="information.html"><b><font color="#191919" class="now">架構分析</font></b></a></li>
+                    <li><a href="web.html"><b>推薦網站</b></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <center>
+    <font class="shippori-antique-b1-regular" size="7" ><b>網頁製作理念</font>
+   </center>
+  <br>
+  
+  <div class="container">
+	  <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="head1">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">頁首</button>
+          </h2>
+          <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul>
+			  <li><p><b>製作動機:</b>因為興趣是玩遊戲，所以小時候在看神奇寶貝動畫時一直希望未來能夠玩到一款寶可夢系列的遊戲(不論是電子遊戲還是及換是卡牌遊戲)這個願望一直到這幾年才達成(因為小時候沒有遊戲主機)，所以想以介紹寶可夢相關資訊用來紀念願望達成</p>			  </li>
+			  <li><p><b>網站規劃參考:</b><a href="https://tw.portal-pokemon.com/special/hot_info/">(台灣寶可夢官方網站)</a>因為想介紹寶可夢因此參考了官方網站，借鑒了該網站的分類概念和排版，希望有如預期一般呈現效果</p>
+			  </li>
+			  <li><p><b>分頁主題:</b>主要想介紹遊戲的部分，因此介紹完歷史和世界觀後分享的部分主要著重在遊戲的內容</p>
+			  </li>
+			  <li><p><b>架構:</b>希望如官方網站一樣繽紛有趣，因此放了一些高彩度色塊和點擊互動頁面或輪播</p>
+			  </li>
+			  </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="head2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">世界觀</button>
+          </h2>
+          <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul>
+			  <li><p><b>背景:</b>因是介紹遊戲歷史所以採用符合歷史背景的神奧地區地圖作為背景圖，且為了增加層次感與文字清晰度所以疊加了一層白色背景作為主要排版區塊</p>			  
+			  </li>
+			  <li><p><b>網頁規劃參考:</b>內容參考了民間網站<a href="https://wiki.52poke.com/wiki/%E4%B8%BB%E9%A1%B5">(神奇寶貝百科)</a>使用了網站裡對於該系列的歷史介紹與地區地圖做為網站內容使用</p>
+			  </li>
+			  <li><p><b>分頁主題:</b>想在前幾個子網頁裡先介紹寶可夢的世界觀，藉由故事背景和完整的世界觀來吸引觀看者的興趣</p>
+			  </li>
+			  <li><p><b>架構:</b>分頁使用大地色系符合歷史相關主題，並在內頁使用導覽列來分類各個細項，使用div製作類似table的功能讓照片能符合響應式頁面的格式</p>
+			  </li>
+			  </ul>
+            </div>
+          </div>
+        </div> 
+		<div class="accordion-item">
+          <h2 class="accordion-header" id="head3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">寶可夢是什麼?</button>
+          </h2>
+          <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul>
+			  <li><p><b>製作動機:</b>想讓網頁觀看者能直接了解這個IP最吸引人的特色---被稱作"寶可夢"或舊稱"神奇寶貝"的生物們</p>			  
+			  </li>
+			  <li><p><b>網頁規劃參考:</b>參考了官方網站<a href="https://tw.portal-pokemon.com/about/">(寶可夢台灣)</a>對於寶可夢的介紹方式和內容，畢竟官方介紹還是最為準確</p>
+			  </li>
+			  <li><p><b>分頁主題:</b>介紹被稱作"寶可夢"的生物在遊戲裡的定位和功能，以及每個世代的御三家</p>
+			  </li>
+			  <li><p><b>架構:</b>背景使用了畫滿歷代御三家的同人插畫圖，色彩選擇較為柔和，希望能藉此強調該頁面的照片和文字</p>
+			  </li>
+			  </ul>
+            </div>
+          </div>
+        </div> 
+		<div class="accordion-item">
+          <h2 class="accordion-header" id="head4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">電子遊戲</button>
+          </h2>
+          <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul>
+			  <li><p><b>個人推薦:想入坑寶可夢系列並手上有switch主機的話可以先從《寶可夢 朱/紫》開始,此世代的寶可夢種類眾多，並且還納入了其他世代的御三家。想更了解寶可夢的歷史並且有一定反應能力和操作技術的話可以玩玩看《寶可夢傳說：阿爾宙斯》最後如果手機條件許可請務必玩玩看《Pokémon Trading Card Game Pocket》不但可以滿足想動腦的卡牌實戰派玩家,在一天有免費兩包卡包的情況下也能達成圖鑑收藏家的夢想。
+			  </b></p>			  
+			  </li>
+			  <li><p><b>網頁規劃參考:參考了官方網站介紹<a href="https://hk.portal-pokemon.com/game/">(寶可夢遊戲列表)</a>與維基百科<a href="https://zh.wikipedia.org/zh-tw/%E5%AF%B6%E5%8F%AF%E5%A4%A2%E7%B3%BB%E5%88%97%E9%9B%BB%E5%AD%90%E9%81%8A%E6%88%B2%E5%88%97%E8%A1%A8">(寶可夢系列電子遊戲列表)</a></b></p>
+			  </li>
+			  <li><p><b>分頁主題:介紹各世代代表的寶可夢系列遊戲與特色</b></p>
+			  </li>
+			  <li><p><b>架構:參考官方網站用卡片將每個世代的代表遊戲一一介紹，並在最底下加上各個官方網站與最新消息影片作為補充</b></p>
+			  </li>
+			  </ul>
+            </div>
+          </div>
+        </div> 
+		<div class="accordion-item">
+          <h2 class="accordion-header" id="head5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">PTCG</button>
+          </h2>
+          <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul>
+			  <li><p><b>製作動機:</b>因為曾經無意間接觸過實體卡一陣子，但因為如果要持續玩的話卡包買下來會太貴，但因為最近出了數位版的PTCG因此重新燃起了對寶可夢卡牌的興趣</p>			  
+			  </li>
+			  <li><p><b>網頁規劃參考:</b>實體卡的部分參考了官方網站<a href="https://asia.pokemon-card.com/tw/">(訓練家網站)</a>，數位版差異的部分則參考了維基百科<a href="https://zh.wikipedia.org/zh-tw/Pok%C3%A9mon_Trading_Card_Game_Pocket">(Pokémon&nbsp Trading&nbsp Card&nbsp Game&nbsp Pocket)</a></p>
+			  </li>
+			  <li><p><b>分頁主題:</b>此頁面著重在介紹寶可夢卡牌相關遊戲玩法與種類及實體與虛擬版差異</p>
+			  </li>
+			  <li><p><b>架構:</b>參考了官方網站的介紹順序與其他遊戲網站主頁的配色或排版，希望能呈現出簡單明瞭且易於比較差異的畫面</p>
+			  </li>
+			  </ul>
+            </div>
+          </div>
+        </div>  
+	<div class="accordion-item">
+          <h2 class="accordion-header" id="head6">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6">寶可夢中心</button>
+          </h2>
+          <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul>
+			  <li><p><b>製作動機:</b>想介紹寶可夢系列能如此長壽原因之一(或稱為斂財管道)寶可夢中心/商店，販賣了各種會錢包變瘦的生活用品與非必需品，以及寶可夢中心名稱的由來</p>			  
+			  </li>
+			  <li><p><b>網頁規劃參考:</b>店家資訊參考了官方網站<a href="https://www.pokemon.co.jp/shop/">(寶可夢日本)</a>由來則參考了維基百科<a href="https://zh.wikipedia.org/zh-tw/%E5%AE%9D%E5%8F%AF%E6%A2%A6%E7%B3%BB%E5%88%97">(維基百科寶可夢)</a></p>
+			  </li>
+			  <li><p><b>分頁主題:</b>介紹寶可夢中心在遊戲裡的功能以及現實裡的商店被稱作寶可夢中心的源由，並且稍微介紹一下台灣的寶可夢中心(同時也是目前海外唯二的寶可夢中心)</p>
+			  </li>
+			  <li><p><b>架構:</b>在頁頂使用遊戲畫面的GIF來直接解釋寶夢中心的功能，下面在附上解釋內容，在網頁中間使用導覽列和卡片來分類各地區的寶可夢中心/商店，最後再稍微提到台北寶可夢中心並使用輪播介紹商店樣貌</p>
+			  </li>
+			  </ul>
+            </div>
+          </div>
+        </div>
+		<div class="accordion-item">
+          <h2 class="accordion-header" id="head6">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7">架構分析</button>
+          </h2>
+          <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul>
+			  <li><p><b>製作動機:</b>統整整個網頁主頁和分頁的製作動機、排版和參考內容</p>			  
+			  </li>
+			  <li><p><b>網站規劃參考:</b>參考其他分頁內容並統整</p>
+			  </li>
+			  <li><p><b>分頁主題:</b>統整和分類分頁要素並列點寫下</p>
+			  </li>
+			  <li><p><b>架構:</b>想要讓外觀簡潔明瞭因此使用ul列點和下拉式導覽列整理內容</p>
+			  </li>
+			  </ul>
+            </div>
+          </div>
+        </div>
+				<div class="accordion-item">
+          <h2 class="accordion-header" id="head6">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8">推薦網站</button>
+          </h2>
+          <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul>
+			  <li><p><b>製作動機:</b>作業內容需求</p>			  
+			  </li>
+			  <li><p><b>網頁規劃參考:</b>參考世界觀分頁的整理方式</p>
+			  </li>
+			  <li><p><b>分頁主題:</b>介紹自己喜歡的網站---Doodles</p>
+			  </li>
+			  <li><p><b>架構:</b>使用導覽列分類，並嵌入網頁和加上導入網頁的按鈕</p>
+			  </li>
+			  </ul>
+            </div>
+          </div>
+        </div>
+	</div>
+   </div>
+ </body>
+</html>

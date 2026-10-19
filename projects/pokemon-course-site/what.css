@@ -1,0 +1,233 @@
+.shippori-antique-b1-regular {
+    font-family: "Shippori Antique B1", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:SlateBlue;
+	text-shadow: #A0A0FF 0.1em 0.1em 0.1em;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: none;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("image/pkgb.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -3;
+}
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left:10%;
+    width: 80%;
+    height: 100%;
+    background-image: url("image/white2.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -2;
+}
+
+.main-header .container {
+    max-width: 100%;
+    margin: auto;
+	height:20%;
+}
+
+.main-header .logo {
+    width: 100px;
+}
+
+nav {
+    background-color: #A0A0FF;
+    width: 100%;
+    margin: 0; 
+    padding: 0;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 100; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+nav > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+    text-align: center;
+    color: Snow;
+}
+
+nav a {
+    color: inherit;
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 20px; 
+    margin: 0; 
+}
+
+nav a:hover {
+    text-shadow: 0 0 0.2em #F0F8FF, 0 0 0.2em #F0F8FF;
+    color: SlateBlue;
+}
+.flex-nav > li {
+    display: inline-block;
+    margin-right: auto;
+	
+}
+
+p{
+	font-size:20px;
+	margin-right:135px;
+	line-height: 35px;
+	margin-left:140px;
+}
+h4{
+	font-size:20px;
+	margin-right:130px;
+	line-height: 35px;
+	margin-left:140px;
+	color:SlateBlue;
+}
+.tit{
+	font-size:25px;
+	margin-right:130px;
+	line-height: 35px;
+	margin-left:140px;
+	color:SlateBlue;
+	text-shadow:0.1em 0.1em 0.2em #B2B2FF;
+	
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.responsive-table {
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: center;
+    gap: 5px; 
+}
+
+.pokemon {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.pokemon img {
+    width: 90%; 
+    height: 90%; 
+    object-fit: cover; 
+}
+
+.potext p {
+    margin: 0;
+    font-size: 20px; 
+    color: #FFF; 
+}
+.evolution {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.evolution p {
+    font-size: 20px;
+    color: DarkSlateBlue;
+    margin: 0; 
+	text-shadow: #A0A0FF 0.1em 0.1em 0.1em;
+	
+}
+
+
+.table-attact {
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    cursor: pointer; 
+}
+
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9); 
+	align-items: center;
+	justify-content: center; 
+}
+
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.modal-content {
+    display: block;
+    margin:auto;
+    max-width: 90%; 
+    max-height: 100%; 
+    border-radius: 8px;
+}
+
+.pktb {
+    list-style-position: inside; 
+    padding: 0; 
+	
+}
+
+.pktb li {
+    list-style-type: disc;
+    display: flex; 
+    flex-direction: column;
+	align-items: center; 
+    margin-bottom: 20px; 
+	text-shadow:0.1em 0.1em 0.2em Silver;
+}
+
+.pktb li h4 {
+    margin: 0;
+    color: Indigo ;	
+	text-shadow:0.1em 0.1em 0.2em #B2B2FF;
+}
+
+.pktb img {
+    margin-top: 10px; 
+    max-width: 100%;
+    height: auto; 
+}

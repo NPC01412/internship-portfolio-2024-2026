@@ -1,0 +1,179 @@
+<html>
+ <head>
+    <meta charset="utf-8" />
+    <title>寶可夢是什麼?</title>
+    <link rel="stylesheet" type="text/css" href="what.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    </head>
+	
+	<script>
+	
+function openImage(img) {
+    const modal = document.getElementById("image-modal");
+    const modalImg = document.getElementById("modal-image");
+    modal.style.display = "block";
+    modalImg.src = img.src;
+}
+
+
+function closeImage() {
+    const modal = document.getElementById("image-modal");
+    modal.style.display = "none";
+}
+
+	</script>
+	
+ <body>
+  <header>
+ 
+    <header class="main-header">
+        <div class="container">
+            <nav>
+                <ul class="flex-nav">
+                    <li><a href="index.html"><img src="image/logo.png" alt="logo" title="logo" style="width:100%;" class="logo"></a></li>
+                    <li><a href="world.html"><b>世界觀</b></a></li>
+                    <li><a href="what.html"><b><font color="#FFC080" class="now">寶可夢是什麼?</font></b></a></li>
+                    <li><a href="game.html"><b>電子遊戲</b></a></li>
+                    <li><a href="ptcg.html"><b>PTCG</b></a></li>
+                    <li><a href="center.html"><b>寶可夢中心</b></a></li>
+                    <li><a href="information.html"><b>架構分析</b></a></li>
+                    <li><a href="web.html"><b>推薦網站</b></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   <center>
+    <font class="shippori-antique-b1-regular" size="7" ><b>寶可夢究竟是什麼?</font>
+   </center>
+  </header>
+  <br>
+  <h4 class="tit"><b>你可以使用精靈球收服的神祕生物</h4>
+<p>寶可夢是充滿著許多秘密的神祕生物。一些寶可夢跟人類一起生活，一些是生活在野外草地或是洞穴、或是海洋中，但很多關於他們的生態依舊是未知。他們主要的特徵之一是一個精靈球收服他們，這也讓他們能夠被隨身攜帶。
+</p>
+<br>
+<h4 class="tit"><b>有多少種的寶可夢存在呢?</h4>
+<p>確切的數字是未知的。雖然已經有超過1000種的寶可夢被證實存在，但還有未知的寶可夢肯定在不久的未來會被找到。
+</p>
+<br>
+<h4 class="tit"><b>寶可夢透過對戰變強</h4>
+<p>寶可夢透過升級進化。舉例來說，小火龍的進化：</p><br>
+<div class="container">
+    <div class="responsive-table">
+        <div class="pokemon">
+            <img src="image/fire1.png" alt="小火龍">
+            <div class="potext">
+                <p><b><span style="background-color:MediumSlateBlue">小火龍</span></b></p>
+            </div>
+        </div>
+		 <div class="evolution">
+            <p><b>進化</b></p>
+        </div>
+        <div class="pokemon">
+            <img src="image/fire2.png" alt="火恐龍">
+            <div class="potext">
+                <p><b><span style="background-color:MediumSlateBlue">火恐龍</span></b></p>
+            </div>
+        </div>
+		 <div class="evolution">
+            <p><b>進化</b></p>
+        </div>
+        <div class="pokemon">
+            <img src="image/fire3.png" alt="噴火龍">
+            <div class="potext">
+                <p><b><span style="background-color:MediumSlateBlue">噴火龍</span></b></p>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<p>寶可夢學習各種可以在對戰中使用的動作。透過對戰升級，寶可夢會越來越強。有些寶可夢不僅會升級，也會進化。
+</p><br>
+<h4 class="tit"><b>多種屬性的寶可夢</h4>
+<p>寶可夢根據他們特性被劃分為18種屬性。每一屬性都有特殊本性對對戰有很大的影響。如果你對手的寶可夢有正確的本性，在對戰中可能都是很大的優勢。</p>
+<div class="image-container">
+    <img src="image/table.jpg" alt="屬性相剋表" class="table-attact" onclick="openImage(this)">
+</div>
+<div id="image-modal" class="modal" onclick="closeImage()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-image">
+</div>
+<center>
+<p><b>
+左邊是優勢方右邊是弱勢方&nbsp[點擊圖片放大]
+</p>
+</center>
+<br>
+<center>
+    <font class="shippori-antique-b1-regular" size="7" ><b>歷代御三家</font><br><br>
+</center>
+<center>
+<ul class="pktb">
+    <li>
+        <h4><b>第一世代</b></h4>
+        <br>
+		<p><b>遊戲版本：紅/綠/藍/皮卡丘</b></p>
+        <p><b>御三家：妙蛙種子、小火龍、傑尼龜</b></p>
+        <img src="image/team1.png" alt="第一世代">
+    </li>
+	<li>
+        <h4><b>第二世代</b></h4>
+        <br>
+		<p><b>遊戲版本：金、銀、水晶版</b></p>
+        <p><b>御三家：菊草葉、火球鼠、小鋸鱷</b></p>
+        <img src="image/team2.png" alt="第二世代">
+    </li>
+	<li>
+        <h4><b>第三世代</b></h4>
+        <br>
+		<p><b>遊戲版本：紅寶石、藍寶石、綠寶石版</b></p>
+        <p><b>御三家：木守宮、火稚雞、水躍魚</b></p>
+        <img src="image/team3.png" alt="第三世代">
+    </li>
+	<li>
+        <h4><b>第四世代</b></h4>
+        <br>
+		<p><b>遊戲版本：鑽石、珍珠、白金版</b></p>
+        <p><b>御三家：草苗龜、小火焰猴、波加曼</b></p>
+        <img src="image/team4.png" alt="第四世代">
+    </li>
+	<li>
+        <h4><b>第五世代</b></h4>
+        <br>
+		<p><b>遊戲版本：黑、白版</b></p>
+        <p><b>御三家：藤藤蛇、暖暖豬、水水獺</b></p>
+        <img src="image/team5.png" alt="第五世代">
+    </li>
+	<li>
+        <h4><b>第六世代</b></h4>
+        <br>
+		<p><b>遊戲版本：X／Y版</b></p>
+        <p><b>御三家：哈力栗、火狐狸、呱呱泡蛙</b></p>
+        <img src="image/team6.png" alt="第六世代">
+    </li>
+	<li>
+        <h4><b>第七世代</b></h4>
+        <br>
+		<p><b>遊戲版本：太陽／月亮版</b></p>
+        <p><b>御三家：木木梟、火斑喵、球球海獅</b></p>
+        <img src="image/team7.png" alt="第七世代">
+    </li>
+	<li>
+        <h4><b>第八世代</b></h4>
+        <br>
+		<p><b>遊戲版本：劍／盾版</b></p>
+        <p><b>御三家：敲音猴、炎兔兒、淚眼蜥</b></p>
+        <img src="image/team8.png" alt="第八世代">
+    </li>
+	<li>
+        <h4><b>第九世代</b></h4>
+        <br>
+		<p><b>遊戲版本：朱／紫</b></p>
+        <p><b>御三家：新葉喵、呆火鱷、潤水鴨</b></p>
+        <img src="image/team9.png" alt="第九世代">
+    </li>
+</ul>
+</center>
+ </body>
+</html>

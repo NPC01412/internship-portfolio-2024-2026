@@ -1,0 +1,171 @@
+        .shippori-antique-b1-regular {
+			font-family: "Shippori Antique B1", serif;
+			font-weight: 400;
+			font-style: normal;
+			color:RoyalBlue;
+			text-shadow: Silver 10px 10px 10px;
+			}
+
+
+		
+		body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: none;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("image/background1.jpg");
+            background-size: cover;
+            background-position: center;
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        .main-header .container {
+            max-width: 100%;
+            margin: 0;
+        }
+
+        .main-header .logo {
+            width: 100px;
+        }
+
+        nav {
+            background-color: #FF0000;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        nav > ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: Snow;
+        }
+
+        nav a {
+            color: inherit;
+            font-size: 1.6rem;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 10px;
+        }
+
+        nav a:hover {
+            text-shadow: 0 0 0.2em DarkOrange, 0 0 0.2em DarkOrange;
+            color: Khaki;
+        }
+
+        .flex-nav {
+            text-align: center;
+        }
+
+        .flex-nav > li {
+            display: inline-block;
+            margin-right: auto;
+        }
+
+        p {
+            line-height: 60px;
+			
+        }
+
+        em {
+            text-shadow: #FF9999 10px 10px 10px;
+            color: #990000;
+        }
+
+        .carousel {
+            margin: 20px auto;
+            max-width: 90%;
+            border: 5px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .carousel-inner {
+            height: 416px;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: 416px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        iframe {
+            border: 5px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 20px 10px rgba(0, 0, 0, 0.2);
+            max-width: 100%;
+        }
+
+        h4 {
+            padding: 50px;
+			text-shadow:Silver 10px 10px 10px;
+        }
+		
+	nav, .footer {
+    width: 100%; 
+    left: 0;     
+}
+	.footer{
+		width:full;
+		color:#FF0000;
+	}
+	.footer > nav>center{
+		color:white;
+		font-size:20px;
+		text-shadow:0 10px 10px rgba(0, 0, 0, 0.2);
+	}
+	.icon{
+		width: 50px;
+        height: 50px;
+        margin-right: 5px;
+		margin-left: 5px;
+	    box-shadow:0 10px 10px rgba(0, 0, 0, 0.2);
+		border-radius: 10px;
+		border:10px;
+		border-color:white;
+	}
+
+        @media (max-width: 768px) {
+            nav a {
+                font-size: 1.2rem;
+                padding: 10px 15px;
+            }
+
+            .carousel-control-prev,
+            .carousel-control-next {
+                width: 10%;
+            }
+
+            .carousel-inner {
+                height: 150px;
+            }
+        }
+		@media (max-width: 380px) {
+            nav a {
+                font-size: 1.2rem;
+                padding: 10px 15px;
+            }
+
+            .carousel-control-prev,
+            .carousel-control-next {
+                width: 10%;
+            }
+
+            .carousel-inner {
+                height: 50px;
+            }
+        }

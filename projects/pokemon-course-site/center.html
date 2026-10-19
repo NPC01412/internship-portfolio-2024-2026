@@ -1,0 +1,766 @@
+<html>
+ <head>
+    <meta charset="utf-8" />
+    <title>寶可夢中心Pokémon Center</title>
+    <link rel="stylesheet" type="text/css" href="center.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const track = document.querySelector('.carousel-track');
+            const slides = Array.from(track.children);
+            const nextButton = document.querySelector('.next');
+            const prevButton = document.querySelector('.prev');
+            const thumbnails = document.querySelectorAll('.thumbnail');
+
+            let currentIndex = 0;
+
+            function moveSlide(index) {
+                track.style.transform = `translateX(-${index * 100}%)`;
+                currentIndex = index;
+                updateThumbnails(index);
+            }
+
+            function updateThumbnails(index) {
+                thumbnails.forEach((thumbnail, i) => {
+                    if (i === index) {
+                        thumbnail.classList.add('active');
+                    } else {
+                        thumbnail.classList.remove('active');
+                    }
+                });
+            }
+
+            nextButton.addEventListener('click', () => {
+                if (currentIndex < slides.length - 1) {
+                    moveSlide(currentIndex + 1);
+                }
+            });
+
+            prevButton.addEventListener('click', () => {
+                if (currentIndex > 0) {
+                    moveSlide(currentIndex - 1);
+                }
+            });
+
+            thumbnails.forEach((thumbnail, index) => {
+    thumbnail.addEventListener('click', () => {
+        moveSlide(index); 
+    });
+});
+
+
+            
+            updateThumbnails(currentIndex);
+        });
+</script>
+
+	</head>
+	
+   <body>
+  <header>
+    <header class="main-header">
+        <div class="container">
+            <nav>
+                <ul class="flex-nav">
+                    <li><a href="index.html"><img src="image/logo.png" alt="logo" title="logo" style="width:100%;" class="logo"></a></li>
+                    <li><a href="world.html"><b>世界觀</b></a></li>
+                    <li><a href="what.html"><b>寶可夢是什麼?</b></a></li>
+                    <li><a href="game.html"><b>電子遊戲</b></a></li>
+                    <li><a href="ptcg.html"><b>PTCG</b></a></li>
+                    <li><a href="center.html"><b><font color="DodgerBlue" class="now">寶可夢中心</font></b></a></li>
+                    <li><a href="information.html"><b>架構分析</b></a></li>
+                    <li><a href="web.html"><b>推薦網站</b></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   <center>
+    <font class="shippori-antique-b1-regular" size="7" ><b>寶可夢中心是什麼?</font>
+   </center>
+  </header>
+  <br>
+<center>
+    <div class="image-container">
+      <img src="image/center.gif" alt="GIF-Image" class="GIF-Image">
+      <div class="overlay-text">喬伊小姐治療精靈球中</div>
+    </div>
+  </center>
+  <br>
+    <p><b>是由寶可夢公司旗下子公司寶可夢中心公司負責營運的寶可夢相關商品專賣店。店內販售品項除了周邊商品、遊戲軟體、卡牌遊戲之外，也販售了許多原創商品，並且會不定期提供各項活動及體驗。<br><br>
+
+除了實體門市外，在日本及美國還開設了寶可夢中心線上專賣店（英語：Pokémon Center Online，日語：ポケモンセンターオンライン），在中國大陸則是與阿里巴巴合作於天貓開設天貓寶可夢線上官方店。<br><br>
+在日本國內的部分車站及機場等設施中，還營運了規模與寶可夢中心相比較小的寶可夢商店（英語：Pokémon Store，日語：ポケモンストア）。
+寶可夢中心一詞源自於寶可夢系列中能夠替寶可夢回復活力及購買相關遊戲道具的複合型設施。首家門市於1998年在東京日本橋開幕。目前在日本於東京（4間店鋪）、大阪（2間店鋪）、札幌、仙台、船橋、橫濱、金澤、名古屋、京都、廣島、福岡、沖繩等城市均設有門市 ，每間門市都有根據當地的文化或歷史而設計的專屬標誌及店內吉祥寶可夢。<br><br>
+在日本國內的部分車站及機場等設施中，還營運了規模與寶可夢中心相比較小的寶可夢商店（英語：Pokémon Store，日語：ポケモンストア）。<br><br>
+</b></p>
+
+<h4 class="tit"><b>分店資訊與吉祥物
+</h4>
+<br>
+<div class="nav-tab">
+    <div class="container">
+      <ul class="nav nav-tabs" id="myTab">
+        <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#tab1">北海道．東北</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tab2">關東</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tab3">中陸．北部</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tab4">關西</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tab5">中國．四國</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tab6">九州．沖繩</a></li>
+		<li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tab7">海外</a></li>
+      </ul>
+      
+      
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="tab1">
+		  <div class="row px-5 pt-5"> 
+  <div class="col-11 d-flex align-items-stretch">
+    <div class="card">
+	  <div class="pic">
+	    <img src="image/cf1.jpg">
+	  </div>
+	  <div class="card-body">
+        <h3 class="title">
+        <b>寶可夢中心&nbsp札幌店</b>
+        </h3>
+      </div>
+  <div class="card-footer">
+    <p class="text">
+      
+營業時間&nbsp&nbsp Monday - Sunday 10:00 am - 8:00 pm<br>
+*以大丸札幌店的營業時間為準。<br>
+休息日&nbsp&nbsp無公休日<br>
+地址&nbsp&nbsp
+札幌市中央區北5条西4-7
+大丸札幌店&nbsp 8F<br>
+<input type="button" class="button" onclick="location.href='https://www.pokemon.co.jp/shop/pokecen/sapporo/';" value="更多資訊"/>  
+	</p>
+  </div>
+     </div>
+   </div>
+</div>
+<div class="row px-5 pt-5"> 
+  <div class="col-11 d-flex align-items-stretch">
+    <div class="card">
+	  <div class="pic">
+	    <img src="image/cf2.jpg">
+	  </div>
+	  <div class="card-body">
+        <h3 class="title">
+        <b>寶可夢中心&nbsp仙台店</b>
+        </h3>
+      </div>
+  <div class="card-footer">
+    <p class="text">
+  營業時間&nbsp&nbsp Monday - Sunday 10:00 am - 8:30 pm<br>
+*以仙台PARCO本館營業時間為準。<br>
+休息日&nbsp&nbsp無公休日<br>
+地址&nbsp&nbsp	
+宮城縣仙台市青葉區中央1-2-3
+仙台PARCO&nbsp 8F<br>
+<input type="button" class="button" onclick="location.href='https://www.pokemon.co.jp/shop/tc/pokecen/tohoku/';" value="更多資訊"/>  
+	</p>
+  </div>
+     </div>
+   </div>
+</div>
+<div class="row px-5 pt-5"> 
+  <div class="col-11 d-flex align-items-stretch">
+    <div class="card">
+	  <div class="pic">
+	    <img src="image/cf3.jpg">
+	  </div>
+	  <div class="card-body">
+        <h3 class="title">
+        <b>寶可夢商店&nbsp新千歲機場店</b>
+        </h3>
+      </div>
+  <div class="card-footer">
+    <p class="text">   
+營業時間&nbsp Monday - Sunday 8:00 am - 8:00 pm<br>
+*請注意，開放時間可能會視情況而改變。<br>
+休息日&nbsp&nbsp無公休日<br>
+地址&nbsp&nbsp
+北海道千歲市美々987
+新千歲機場國內線航廈2樓<br>
+<input type="button" class="button" onclick="location.href='https://www.pokemon.co.jp/shop/tc/store/new-chitose-airport/';" value="更多資訊"/>  
+	</p>
+  </div>
+     </div>
+   </div>
+</div>
+         </div>
+          <div class="tab-pane fade" id="tab2">
+           <div class="row px-5 pt-5"> 
+  <div class="col-11 d-flex align-items-stretch">
+    <div class="card">
+	  <div class="pic">
+	    <img src="image/cf4.jpg">
+	  </div>
+	  <div class="card-body">
+        <h3 class="title">
+        <b>寶可夢中心&nbsp日本橋店</b>
+        </h3>
+      </div>
+  <div class="card-footer">
+      <p class="text">   
+營業時間&nbsp Monday - Sunday 10:30 am - 9:00 pm<br>
+*Pokémon&nbsp Cafe（營業時間）上午10:30 - 下午10:00<br>
+休息日&nbsp&nbsp無公休日<br>
+地址&nbsp&nbsp
+東京都中央區日本橋二丁目11番2號&nbsp日本橋高島屋Ｓ.Ｃ.東館&nbsp5F<br>
+<input type="button" class="button" onclick="location.href='https://www.pokemon.co.jp/shop/tc/pokecen/tokyodx/';" value="更多資訊"/>  
+	</p>
+  </div>
+     </div>
+   </div>
+</div>
+<div class="row px-5 pt-5"> 
+  <div class="col-11 d-flex align-items-stretch">
+    <div class="card">
+	  <div class="pic">
+	    <img src="image/cf5.jpg">
+	  </div>
+	  <div class="card-body">
+        <h3 class="title">
+       <b>寶可夢中心&nbsp池袋店</b>
+        </h3>
+      </div>
+  <div class="card-footer">
+    <p class="text">   
+營業時間&nbsp Monday - Sunday 10:00 am - 8:00 pm<br>
+*以太陽城專門店街alpa的營業時間為準。<br>
+休息日&nbsp&nbsp無公休日<br>
+地址&nbsp&nbsp
+東京都豐島區東池袋3-1-2
+太陽城專門店街alpa&nbsp 2F<br>
+<input type="button" class="button" onclick="location.href='https://www.pokemon.co.jp/shop/pokecen/megatokyo/';" value="更多資訊"/>  
+	</p>
+  </div>
+     </div>
+   </div>
+</div>
+<div class="row px-5 pt-5"> 
+  <div class="col-11 d-flex align-items-stretch">
+    <div class="card">
+	  <div class="pic">
+	    <img src="image/cf6.jpg">
+	  </div>
+	  <div class="card-body">
+        <h3 class="title">
+        <b>寶可夢中心&nbsp澀谷店</b>
+        </h3>
+      </div>
+  <div class="card-footer">
+    <p class="text">   
+營業時間&nbsp	Monday - Sunday 10:00 am - 9:00 pm<br>
+*以澀谷PARCO營業時間為準。<br>
+休息日&nbsp&nbsp無公休日<br>
+地址	&nbsp&nbsp
+東京都澀谷區宇田川町15番1號澀谷PARCO6樓<br>
+<input type="button" class="button" onclick="location.href='https://www.pokemon.co.jp/shop/tc/pokecen/shibuya/';" value="更多資訊"/>  
+	</p>
+  </div>
+     </div>
+   </div>
+</div>
+<div class="row px-5 pt-5"> 
+  <div class="col-11 d-flex align-items-stretch">
+    <div class="card">
+	  <div class="pic">
+	    <img src="image/cf7.jpg">
+	  </div>
+	  <div class="card-body">
+        <h3 class="title">
+        <b>寶可夢中心&nbsp晴空塔店</b>
+        </h3>
+      </div>
+  <div class="card-footer">
+    <p class="text">   
+營業時間&nbsp	Monday - Sunday 10:00 am - 9:00 pm<br>
+*以澀谷PARCO營業時間為準。<br>
+休息日&nbsp&nbsp無公休日<br>
+地址	&nbsp&nbsp
+東京都澀谷區宇田川町15番1號澀谷PARCO6樓<br>
+<input type="button" class="button" onclick="location.href='https://www.pokemon.co.jp/shop/tc/pokecen/skytreetown/';" value="更多資訊"/>  
+	</p>
+  </div>
+     </div>
+   </div>
+</div>
+  <div class="row px-5 pt-5"> 
+    <div class="col-11 d-flex align-items-stretch">
+      <div class="card">
+        <div class="pic">
+          <img src="image/cf8.jpg">
+        </div>
+        <div class="card-body">
+          <h3 class="title">
+            <b>寶可夢中心&nbsp東京灣店</b>
+          </h3>
+        </div>
+        <div class="card-footer">
+          <p class="text">
+		  營業時間&nbsp Monday - Friday 10:00 am - 8:00 pm, Saturday, Sunday 10:00 am - 9:00 pm<br>
+		  *以三井購物園區 LaLaport TOKYO-BAY的營業時間為準。<br>
+		  休息日&nbsp&nbsp無公休日<br>
+		  地址&nbsp&nbsp
+		  千葉縣船橋市濱町2-1-1
+		  三井購物園區&nbsp LaLaport&nbsp TOKYO-BAY&nbsp 西館2F<br>
+            <input type="button" class="button" onclick="location.href='https://www.pokemon.co.jp/shop/pokecen/tokyobay/';" value="更多資訊"/>  
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="row px-5 pt-5"> 
+    <div class="col-11 d-flex align-items-stretch">
+      <div class="card">
+        <div class="pic">
+          <img src="image/cf9.jpg">
+        </div>
+        <div class="card-body">
+          <h3 class="title">
+            <b>寶可夢中心&nbsp橫濱店</b>
+          </h3>
+        </div>
+        <div class="card-footer">
+          <p class="text">
+		  營業時間&nbsp	Monday - Sunday 10:30 am - 8:30 pm<br>
+		  *以丸井橫濱的營業時間為準。<br>
+		  休息日&nbsp&nbsp無公休日<br>
+		  地址&nbsp&nbsp	
+		  橫濱市西區高島2-19-12&nbsp MARUI&nbsp CITY橫濱8F<br>
+            <input type="button" class="button" onclick="location.href='https://www.pokemon.co.jp/shop/pokecen/yokohama/';" value="更多資訊"/>  
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+   <div class="row px-5 pt-5"> 
+    <div class="col-11 d-flex align-items-stretch">
+      <div class="card">
+        <div class="pic">
+          <img src="image/cf10.jpg">
+        </div>
+        <div class="card-body">
+          <h3 class="title">
+            <b>寶可夢商店&nbsp東京車站店</b>
+          </h3>
+        </div>
+        <div class="card-footer">
+          <p class="text">
+		  營業時間&nbsp	Monday - Sunday 10:00 am - 8:30 pm
+		  *以東京站一番街營業時間為準。
+		  休息日&nbsp&nbsp無公休日
+		  地址&nbsp&nbsp	
+		  東京都千代田區丸之内1-9-1東京車站一番街1F<br>
+            <input type="button" class="button" onclick="location.href='https://www.pokemon.co.jp/shop/store/tokyo/';" value="更多資訊"/>  
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+     <div class="row px-5 pt-5"> 
+    <div class="col-11 d-flex align-items-stretch">
+      <div class="card">
+        <div class="pic">
+          <img src="image/cf11.jpg">
+        </div>
+        <div class="card-body">
+          <h3 class="title">
+            <b>寶可夢商店&nbsp木更津店</b>
+          </h3>
+        </div>
+        <div class="card-footer">
+          <p class="text">
+		  營業時間&nbsp週一至週日 10:00 - 20:00<br>
+		  *與三井奧特萊斯購物城木更津營業時間相同。<br>
+		  休息日&nbsp&nbsp無假日<br>
+		  地點&nbsp&nbsp	
+		  三井奧特萊斯購物城 千葉縣木更津市金田東 3-1-1 木更津 2150 區 <br>
+            <input type="button" class="button" onclick="location.href='https://www.pokemon.co.jp/shop/store/kisarazu/';" value="更多資訊"/>  
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row px-5 pt-5"> 
+    <div class="col-11 d-flex align-items-stretch">
+      <div class="card">
+        <div class="pic">
+          <img src="image/cf12.jpg">
+        </div>
+        <div class="card-body">
+          <h3 class="title">
+            <b>寶可夢商店&nbspt成田機場店</b>
+          </h3>
+        </div>
+        <div class="card-footer">
+          <p class="text">
+		  營業時間&nbspt Monday - Sunday 8:00 am - 8:00 pm<br>
+		  *有關年終及新年假期的開放時間及假期，請留意 "Pokémon Center Staff Voice"。<br>
+		  休息日&nbspt&nbspt無公休日<br>
+		  地址&nbspt&nbspt
+		  千葉縣成田市成田国際機場內
+		  第二候機樓本館4樓<br>
+            <input type="button" class="button" onclick="location.href='https://www.pokemon.co.jp/shop/store/narita-airport/';" value="更多資訊"/>  
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tab-pane fade" id="tab3">
+  <div class="row px-5 pt-5"> 
+    <div class="col-11 d-flex align-items-stretch">
+      <div class="card">
+        <div class="pic">
+          <img src="image/cf13.jpg">
+        </div>
+        <div class="card-body">
+          <h3 class="title">
+            <b>寶可夢中心&nbsp名古屋店</b>
+          </h3>
+        </div>
+        <div class="card-footer">
+          <p class="text">
+		  營業時間&nbsp Monday - Sunday 10:00 am - 9:00 pm<br>
+		  *以名古屋PARCO營業時間為準。<br>
+		  休息日&nbsp&nbsp無公休日<br>
+		  地址&nbsp&nbsp
+		  愛知縣名古屋市中區榮3丁目29番1號名古屋PARCO&nbsp東館2樓<br>
+            <input type="button" class="button" onclick="location.href='https://www.pokemon.co.jp/shop/tc/pokecen/nagoya/';" value="更多資訊"/>  
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row px-5 pt-5"> 
+    <div class="col-11 d-flex align-items-stretch">
+      <div class="card">
+        <div class="pic">
+          <img src="image/cf14.jpg">
+        </div>
+        <div class="card-body">
+          <h3 class="title">
+            <b>寶可夢中心&nbsp金澤店</b>
+          </h3>
+        </div>
+        <div class="card-footer">
+          <p class="text">
+		  營業時間&nbsp Monday - Sunday 10:00 am - 8:00 pm<br>
+		  *以金澤FORUS的營業時間為準。<br>
+		  休息日&nbsp&nbsp無公休日<br>
+		  地址&nbsp&nbsp
+		  石川县金泽市堀川新町3-1金泽FORUS&nbsp 5F<br>
+            <input type="button" class="button" onclick="location.href='https://www.pokemon.co.jp/shop/tc/pokecen/kanazawa/';" value="更多資訊"/>  
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row px-5 pt-5"> 
+    <div class="col-11 d-flex align-items-stretch">
+      <div class="card">
+        <div class="pic">
+          <img src="image/cf15.jpg">
+        </div>
+        <div class="card-body">
+          <h3 class="title">
+            <b>寶可夢商店&nbsp御殿場店</b>
+          </h3>
+        </div>
+        <div class="card-footer">
+          <p class="text">
+		 營業時間	&nbsp Monday - Sunday 10:00 am - 8:00 pm<br>
+		 *將依照GOTEMBA&nbsp PREMIUM&nbsp OUTLETS之規定營業。
+		 休息日&nbsp&nbsp年休1次，2月第3個星期四<br>
+		 地址&nbsp&nbsp	
+		 静岡縣御殿場市深澤1312
+		 GOTEMBA&nbsp PREMIUM&nbsp OUTLETS內 2630區<br>
+            <input type="button" class="button" onclick="location.href='https://www.pokemon.co.jp/shop/tc/store/gotemba/';" value="更多資訊"/>  
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+	 <div class="tab-pane fade" id="tab4">
+   <div class="row px-5 pt-5"> 
+    <div class="col-11 d-flex align-items-stretch">
+      <div class="card">
+        <div class="pic">
+          <img src="image/cf16.jpg">
+        </div>
+        <div class="card-body">
+          <h3 class="title">
+            <b>寶可夢中心&nbsp京都店</b>
+          </h3>
+        </div>
+        <div class="card-footer">
+          <p class="text">
+		營業時間&nbsp Monday - Sunday 10:00 am - 8:00 pm<br>
+		*以京都經濟中心 SUINA室町的營業時間為準。<br>
+		休息日&nbsp&nbsp無公休日<br>
+		地址&nbsp&nbsp
+		京都府京都市下京區四條通室町東入函谷鉾町78號京都經濟中心&nbsp SUINA室町&nbsp 2F<br>
+            <input type="button" class="button" onclick="location.href='https://www.pokemon.co.jp/shop/tc/pokecen/kyoto/';" value="更多資訊"/>  
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>  
+<div class="row px-5 pt-5"> 
+    <div class="col-11 d-flex align-items-stretch">
+      <div class="card">
+        <div class="pic">
+          <img src="image/cf17.jpg">
+        </div>
+        <div class="card-body">
+          <h3 class="title">
+            <b>寶可夢中心&nbsp大阪店</b>
+          </h3>
+        </div>
+        <div class="card-footer">
+          <p class="text">
+		營業時間&nbsp	Monday - Sunday 10:00 am - 8:00 pm<br>
+		*以大丸百貨心齋橋店本館的營業時間為準。<br>
+		休息日&nbsp&nbsp無公休日<br>
+		地址&nbsp&nbsp
+		大阪府大阪市中央區心齋橋筋1-7-1&nbsp DAIMARU&nbsp SHINSAIBASHI&nbsp 本館9樓<br>
+            <input type="button" class="button" onclick="location.href='https://www.pokemon.co.jp/shop/tc/pokecen/osakadx/';" value="更多資訊"/>  
+          </p>
+        </div>
+      </div>
+    </div>
+  </div> 
+<div class="row px-5 pt-5"> 
+    <div class="col-11 d-flex align-items-stretch">
+      <div class="card">
+        <div class="pic">
+          <img src="image/cf18.jpg">
+        </div>
+        <div class="card-body">
+          <h3 class="title">
+            <b>寶可夢中心&nbsp梅田店</b>
+          </h3>
+        </div>
+        <div class="card-footer">
+          <p class="text">
+		營業時間&nbsp Monday - Sunday 10:00 am - 8:00 pm<br>
+		*以大丸梅田店的營業時間為準。<br>
+		休息日&nbsp&nbsp無公休日<br>
+		地址&nbsp&nbsp
+		大阪市北区梅田3-1-1 大丸梅田店 13F<br>
+            <input type="button" class="button" onclick="location.href='https://www.pokemon.co.jp/shop/tc/pokecen/osaka/';" value="更多資訊"/>  
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>          
+</div>
+ <div class="tab-pane fade" id="tab5">
+   <div class="row px-5 pt-5"> 
+    <div class="col-11 d-flex align-items-stretch">
+      <div class="card">
+        <div class="pic">
+          <img src="image/cf19.jpg">
+        </div>
+        <div class="card-body">
+          <h3 class="title">
+            <b>寶可夢中心&nbsp廣島店</b>
+          </h3>
+        </div>
+        <div class="card-footer">
+          <p class="text">
+		營業時間&nbsp Monday - Sunday 10:00 am - 7:30 pm<br>
+		*以SOGO廣島店的營業時間為準。<br>
+		休息日&nbsp&nbsp無公休日<br>
+		地址	&nbsp&nbsp
+		廣島縣廣島市中區基町6-27
+		SOGO廣島店&nbsp本館6樓<br>
+            <input type="button" class="button" onclick="location.href='https://www.pokemon.co.jp/shop/tc/pokecen/hiroshima/';" value="更多資訊"/>  
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="row px-5 pt-5"> 
+    <div class="col-11 d-flex align-items-stretch">
+      <div class="card">
+        <div class="pic">
+          <img src="image/cf20.jpg">
+        </div>
+        <div class="card-body">
+          <h3 class="title">
+            <b>寶可夢商店&nbsp愛媛店</b>
+          </h3>
+        </div>
+        <div class="card-footer">
+          <p class="text">
+		營業時間&nbsp Monday - Sunday 10:00 am - 9:00 pm<br>
+		*以Emifull MASAKI的營業時間為準。<br>
+		休息日&nbsp&nbsp無公休日<br>
+		地址&nbsp&nbsp
+		愛媛縣伊予郡松前町筒井850番　Emifull MASAKI Emi Mall 2樓<br>
+            <input type="button" class="button" onclick="location.href='https://www.pokemon.co.jp/shop/tc/store/ehime/';" value="更多資訊"/>  
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>                     		
+</div>  
+<div class="tab-pane fade" id="tab6">
+<div class="row px-5 pt-5"> 
+    <div class="col-11 d-flex align-items-stretch">
+      <div class="card">
+        <div class="pic">
+          <img src="image/cf21.jpg">
+        </div>
+        <div class="card-body">
+          <h3 class="title">
+            <b>寶可夢中心&nbsp福岡店</b>
+          </h3>
+        </div>
+        <div class="card-footer">
+          <p class="text">
+		營業時間&nbsp Monday - Sunday 10:00 am - 8:00 pm<br>
+		*以JR博多CITY AMU PLAZA博多的營業時間為準。&nbsp*假期基於週日營業時間。<br>
+		休息日&nbsp&nbsp無公休日<br>
+		地址&nbsp&nbsp
+		福岡縣福岡市博多區博多車站中央街1番1號
+		JR博多CITY8F（AMU PLAZA博多內）<br>
+            <input type="button" class="button" onclick="location.href='https://www.pokemon.co.jp/shop/tc/store/ehime/';" value="更多資訊"/>  
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="row px-5 pt-5"> 
+    <div class="col-11 d-flex align-items-stretch">
+      <div class="card">
+        <div class="pic">
+          <img src="image/cf22.jpg">
+        </div>
+        <div class="card-body">
+          <h3 class="title">
+            <b>寶可夢中心&nbsp沖繩店</b>
+          </h3>
+        </div>
+        <div class="card-footer">
+          <p class="text">
+		營業時間&nbsp Monday - Sunday 10:00 am - 10:00 pm<br>
+		*以永旺夢樂城&nbsp沖繩&nbsp來客夢的營業時間為準。<br>
+		休息日&nbsp&nbsp無公休日<br>
+		地址&nbsp&nbsp
+		沖繩縣中頭群北中城村字來客夢1番地
+		永旺夢樂城沖繩來客夢1樓<br>
+            <input type="button" class="button" onclick="location.href='https://www.pokemon.co.jp/shop/pokecen/okinawa/';" value="更多資訊"/>  
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+          </div>
+<div class="tab-pane fade" id="tab7">
+<div class="row px-5 pt-5"> 
+    <div class="col-11 d-flex align-items-stretch">
+      <div class="card">
+        <div class="pic">
+          <img src="image/cf23.jpg">
+        </div>
+        <div class="card-body">
+          <h3 class="title">
+            <b>寶可夢中心&nbsp台北店</b>
+          </h3>
+        </div>
+        <div class="card-footer">
+          <p class="text">
+		營業時間&nbsp	Monday - Thursday, Sunday 11:00 am - 9:30 pm, Friday, Saturday 11:00 am - 10:00 pm<br>
+		*以新光三越的營業時間為準。<br>
+		休息日&nbsp&nbsp無公休日<br>
+		地址&nbsp&nbsp新光三越台北信義新天地A11&nbsp 3F&nbsp (110台北市信義区松壽路11號​）<br>
+            <input type="button" class="button" onclick="location.href='https://www.pokemon.co.jp/shop/tc/pokecen/taipei/';" value="更多資訊"/>  
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>                   
+<div class="row px-5 pt-5"> 
+    <div class="col-11 d-flex align-items-stretch">
+      <div class="card">
+        <div class="pic">
+          <img src="image/cf24.jpg">
+        </div>
+        <div class="card-body">
+          <h3 class="title">
+            <b>寶可夢中心&nbsp樟宜機場店</b>
+          </h3>
+        </div>
+        <div class="card-footer">
+          <p class="text">
+		營業時間&nbsp Monday - Sunday 10:00 am - 10:00 pm<br>
+		*以星耀樟宜機場的營業時間為準。<br>
+		休息日&nbsp&nbsp無公休日<br>
+		地址&nbsp&nbsp新加坡樟宜國際機場內「JEWEL」4樓<br>
+		78 Airport Boulevard, #04-201 & 202, Jewel Changi Airport, Singapore 819666<br>
+            <input type="button" class="button" onclick="location.href='https://www.pokemon.co.jp/shop/tc/pokecen/singapore/';" value="更多資訊"/>  
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<h4 class="tit"><b>唯二的海外商店
+</h4>
+<br>
+<p><b>唯二的兩間商店一間位於新加坡的樟宜國際機場，而另一間就位於台灣。位於新光三越台北信義新天地A11 3F的台北寶可夢中心(Pokémon Center TAIPEI) 在 2023年12月8日盛大開幕。
+店內的設計概念來自擁有豐饒自然環境、且被碧海藍天包圍的島嶼。快龍和皮卡丘作為吉祥物將會在入口熱情地迎接大家唷。店內除了有官方往年出版過的大大小小周邊與實體卡牌、遊戲卡帶外，也有許多台北限定商品等著大家來一探究竟。
+</b></p>
+<center>
+<div class="carousel">
+    <div class="carousel-track">
+        <div class="carousel-slide"><img src="image/taipei1.jpg" alt="Slide 1"></div>
+        <div class="carousel-slide"><img src="image/taipei2.jpg" alt="Slide 2"></div>
+        <div class="carousel-slide"><img src="image/taipei3.jpg" alt="Slide 3"></div>
+        <div class="carousel-slide"><img src="image/taipei4.jpg" alt="Slide 4"></div>
+        <div class="carousel-slide"><img src="image/taipei5.jpg" alt="Slide 5"></div>
+    </div>
+    <div class="carousel-nav">
+        <button class="carousel-button prev">&#10094;</button>
+        <button class="carousel-button next">&#10095;</button>
+    </div>
+</center>
+<div class="thumbnails">
+        <div class="thumbnail"><img src="image/taipei1.jpg" alt="Thumbnail 1"></div>
+        <div class="thumbnail"><img src="image/taipei2.jpg" alt="Thumbnail 2"></div>
+        <div class="thumbnail"><img src="image/taipei3.jpg" alt="Thumbnail 3"></div>
+        <div class="thumbnail"><img src="image/taipei4.jpg" alt="Thumbnail 4"></div>
+        <div class="thumbnail"><img src="image/taipei5.jpg" alt="Thumbnail 5"></div>
+    </div>
+</div>
+<br>
+<div class="map">
+      <div class="content">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.932703600924!2d121.56471747537667!3d25.036357777814903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ab005f0e4781%3A0x634d7d8073bc2fae!2z5a-25Y-v5aSi5Lit5b-D5Y-w5YyX!5e0!3m2!1szh-TW!2stw!4v1735240327636!5m2!1szh-TW!2stw" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="content2">
+        <h4><b>寶可夢中心台北<br>
+		Pokémon Center TAIPEI</b>
+		</h4>
+        <p>地址：新光三越台北信義新天地A11&nbsp 3F<br>
+		營業時間：週日~週四&nbsp 11:00~21：30<br>
+		週五~週六&nbsp 11：00~22：00<br>
+		</p>
+      </div>
+    </div>
+	<br>
+ </body>
+</html>
