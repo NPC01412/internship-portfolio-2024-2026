@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <ImageView
+        android:id="@+id/ivScene"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@android:color/black" />
+
+    <View
+        android:id="@+id/vDarkMask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000" />
+
+    <ImageView
+        android:id="@+id/ivCameraCrack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/camera_crack"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/vFilmBorder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/film_border"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/vFlashOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CC000000"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center">
+
+            <!-- 紅色提示點 -->
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginEnd="8dp"
+                android:background="#FF0000"/>
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⚡ 閃光: 25   |   🎞️ 底片: 8"
+                android:textColor="#FF4444"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:shadowColor="#000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"/>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvStory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="載入中..."
+                android:textColor="#E0E0E0"
+                android:textSize="18sp"
+                android:lineSpacingExtra="8dp"
+                android:shadowColor="#000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="3"/>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button android:id="@+id/btnOption1" android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundTint="#222222" android:textColor="#FFFFFF" android:layout_marginBottom="8dp"/>
+            <Button android:id="@+id/btnOption2" android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundTint="#222222" android:textColor="#FFFFFF" android:layout_marginBottom="8dp"/>
+            <Button android:id="@+id/btnOption3" android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundTint="#222222" android:textColor="#FFFFFF" android:layout_marginBottom="8dp"/>
+            <Button android:id="@+id/btnOption4" android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundTint="#550000" android:textColor="#FFFFFF"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 放相機取景框的對焦角落與十字星讓畫面更有帶入感，我覺得比較符合劇情-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- 左上角 -->
+        <View android:layout_width="30dp" android:layout_height="3dp" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:background="#66FFFFFF"/>
+        <View android:layout_width="3dp" android:layout_height="30dp" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:background="#66FFFFFF"/>
+        <!-- 右上角 -->
+        <View android:layout_width="30dp" android:layout_height="3dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:background="#66FFFFFF"/>
+        <View android:layout_width="3dp" android:layout_height="30dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:background="#66FFFFFF"/>
+        <!-- 左下角 -->
+        <View android:layout_width="30dp" android:layout_height="3dp" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true" android:background="#66FFFFFF"/>
+        <View android:layout_width="3dp" android:layout_height="30dp" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true" android:background="#66FFFFFF"/>
+        <!-- 右下角 -->
+        <View android:layout_width="30dp" android:layout_height="3dp" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:background="#66FFFFFF"/>
+        <View android:layout_width="3dp" android:layout_height="30dp" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:background="#66FFFFFF"/>
+
+        <!-- 中央對焦十字星 -->
+        <View android:layout_width="20dp" android:layout_height="2dp" android:layout_centerInParent="true" android:background="#44FFFFFF"/>
+        <View android:layout_width="2dp" android:layout_height="20dp" android:layout_centerInParent="true" android:background="#44FFFFFF"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutIdCardOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivEndingPhoto"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:background="#444444"/>
+
+        <TextView
+            android:id="@+id/tvIdCardLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivEndingPhoto"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="調查員證件"
+            android:textColor="#990000"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <View
+            android:id="@+id/vScreenBlood"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#99770000"
+            android:alpha="0" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/vFadeOutBlack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:visibility="gone" />
+</RelativeLayout>

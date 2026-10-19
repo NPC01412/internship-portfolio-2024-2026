@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="24dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!-- 劇情出現文字的區域 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layoutButtons"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tvSetupStory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#E0E0E0"
+            android:textSize="18sp"
+            android:lineSpacingExtra="8dp" />
+    </ScrollView>
+
+    <!-- 橫長方形的相機資源提示框 -->
+    <LinearLayout
+        android:id="@+id/layoutCameraPrompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="16dp"
+        android:background="#E6111111"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end|center_vertical"
+                android:text="⚡ 剩餘閃光: 25次"
+                android:textColor="#FF4444"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:maxLines="1"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:background="#555555"
+                android:layout_marginHorizontal="12dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:text="🎞️ 剩餘底片: 8張"
+                android:textColor="#FF4444"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:maxLines="1"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="( 長按畫面空白處可暫時隱藏此框 )"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutIdCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:background="#111111"
+        android:padding="24dp"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivIdPhoto"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:background="#444444"/>
+
+        <TextView
+            android:id="@+id/tvIdNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="#E0E0E0"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- 按鈕 -->
+    <LinearLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnCheckCamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#222222"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp"
+            android:text="[ 檢查相機 ]"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnPickPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#222222"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp"
+            android:text="[ 努力回想自己的長相 (從相簿選取) ]"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnTakePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#222222"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp"
+            android:text="[ 摸黑使用相機自拍確認 (開啟相機) ]"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#550000"
+            android:textColor="#FFFFFF"
+            android:text="[ 帶著證件與相機，確認四周環境 ]"
+            android:visibility="gone"/>
+    </LinearLayout>
+</RelativeLayout>

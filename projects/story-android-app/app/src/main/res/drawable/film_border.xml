@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 上邊框 -->
+    <item android:gravity="top">
+        <shape><size android:height="30dp"/><solid android:color="#F2FFFFFF"/></shape>
+    </item>
+    <!-- 下邊框 -->
+    <item android:gravity="bottom">
+        <shape><size android:height="120dp"/><solid android:color="#F2FFFFFF"/></shape>
+    </item>
+    <!-- 左邊框 -->
+    <item android:gravity="left">
+        <shape><size android:width="30dp"/><solid android:color="#F2FFFFFF"/></shape>
+    </item>
+    <!-- 右邊框 -->
+    <item android:gravity="right">
+        <shape><size android:width="30dp"/><solid android:color="#F2FFFFFF"/></shape>
+    </item>
+</layer-list>
