@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewData["Title"] = "Session 示範";
+    var message = TempData["message"] as string;
+}
+
+<h1>Session 示範</h1>
+<p>這個頁面只展示 Session 狀態，沒有實作正式登入驗證。</p>
+@if (!string.IsNullOrWhiteSpace(message))
+{
+    <p>@message</p>
+}

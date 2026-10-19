@@ -1,0 +1,82 @@
+﻿@model IEnumerable<Partice.Models.Order>
+
+@{
+    ViewData["Title"] = "Prog3";
+}
+
+<h1>Prog3</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.member)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.goodsway)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.location)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.city)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.zone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.portnumber)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.member)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.goodsway)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.city)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.zone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.portnumber)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                <form asp-action="Delete" asp-route-id="@item.ID" method="post" style="display:inline;">
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="btn btn-danger btn-sm"
+                    onclick="return confirm('確定要刪除這筆範例訂單嗎？');">
+                刪除
+                </button>
+                </form>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

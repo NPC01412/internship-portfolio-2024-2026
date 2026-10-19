@@ -1,0 +1,13 @@
+**/.vs/
+**/bin/
+**/obj/
+**/*.user
+**/*.suo
+**/App_Data/
+**/local.properties
+**/.gradle/
+**/build/
+**/.idea/
+**/.env
+**/.env.*
+!**/.env.example
