@@ -10,7 +10,7 @@
 | [拼圖遊戲](projects/puzzle-game/README.md) | 1132 基礎程式設計（二）期末專案 | C# Windows Forms 原始碼與執行說明。 |
 | [企業網路拓樸上機考](projects/network-vlan-exam/README.md) | 1141 資訊網路 | Packet Tracer `.pkt` 檔與 VLAN 規劃摘要。 |
 | [訂單管理網頁](projects/order-manager/README.md) | 1142 網際網路程式設計期末作業 | ASP.NET Core 8 MVC 原始碼與使用虛構資料的公開版。 |
-| [劇情互動 Android App](projects/story-android-app/README.md) | 1142 行動裝置程式設計 Project APK | Kotlin 原始碼與建置說明。 |
+| [劇情互動 Android App](projects/story-android-app/README.md) | 1142 行動裝置程式設計 Project APK | Kotlin 原始碼、建置說明與示範影片。 |
 
 拼圖與 Android 劇情 App 是個人作業，製作時有使用 AI 協助。訂單管理網頁的公開版移除了原始資料庫帳密，改用本機 JSON 與虛構訂單。各資料夾的 README 說明執行方式與素材來源。
 
@@ -29,7 +29,7 @@
 
 ## 尚待補齊
 
-1142「行動裝置程式設計」期末考 App 目前只找到可執行 APK，尚未找到對應的原始碼。因此它尚未作為可重建的程式作品上傳。找到原始碼後可再補上專案與執行說明。
+1142「行動裝置程式設計」另有一份期末考 App。目前找到它的 APK，但沒有找到對應的原始碼。曾檢查一份 Android 專案封存檔：其中的 Kotlin 原始碼屬於上方已收錄的劇情互動 App，封存檔內的 APK 則是期末考版本，兩者並非同一版。因此期末考 App 尚未列為可重建的程式作品；找到對應原始碼後再補上。
 
 ## 素材與公開範圍
 
